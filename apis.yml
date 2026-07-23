@@ -1,8 +1,24 @@
 aid: amperos
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/amperos.png
 name: Amperos
-description: 'Amperos is a company surfaced as a portfolio company of bessemer-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: ai-ml. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Amperos provides AI-powered insurance claims management and revenue recovery for healthcare
+  providers, using agentic AI to recover insurance revenue end-to-end and drive more collections, faster.
+  The platform automates denial management, claims processing, and collections workflows while keeping
+  human experts in the loop for complex cases, and integrates with major EHR / practice-management systems
+  including eClinicalWorks, Athenahealth, NextGen, Epic, ModMed, and Dentrix. Backed by Bessemer Venture
+  Partners. Amperos exposes no public developer API, SDKs, or documentation surface at this time; the
+  product is delivered as a managed service and web application.'
 url: https://raw.githubusercontent.com/api-evangelist/amperos/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,9 +29,16 @@ x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
+x-industry: healthcare
 tags:
 - Company
 - Ai Ml
+- Healthcare
+- Revenue Cycle Management
+- Insurance Claims
+- Agentic AI
+- Health Tech
+- Denial Management
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/amperos-domain-security.yml
 - type: Website
   url: https://www.amperos.com/
+- type: Blog
+  url: https://www.amperos.com/blog
+- type: PrivacyPolicy
+  url: https://www.amperos.com/privacy-policy
+- type: TermsOfService
+  url: https://www.amperos.com/terms
+- type: Login
+  url: http://app.amperoshealth.com/
+- type: SignUp
+  url: https://www.amperos.com/request-a-demo
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
